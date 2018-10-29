@@ -16,7 +16,7 @@
 <meta property="og:site_name" content="Hexo">
 <meta property="og:description" content="CSS书写顺序 位置属性 position display float top left right bottom overflow clear z-index等  自身属性 width height margin padding border等  文字系列 font line-height text-align text-indent vertical-align letter-spacing">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-10-29T08:11:04.415Z">
+<meta property="og:updated_time" content="2018-10-29T08:23:40.129Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="CSS书写顺序、规范和命名规则">
 <meta name="twitter:description" content="CSS书写顺序 位置属性 position display float top left right bottom overflow clear z-index等  自身属性 width height margin padding border等  文字系列 font line-height text-align text-indent vertical-align letter-spacing">
@@ -175,76 +175,47 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h4 id="CSS书写顺序"><a href="#CSS书写顺序" class="headerlink" title="CSS书写顺序"></a>CSS书写顺序</h4><ol>
-<li><p>位置属性</p>
-<p>position display float top left right bottom overflow clear z-index等</p>
+        <h3 id="CSS书写顺序"><a href="#CSS书写顺序" class="headerlink" title="CSS书写顺序"></a>CSS书写顺序</h3><ul>
+<li><p>位置属性<br> position display float top left right bottom overflow clear z-index等</p>
 </li>
-<li><p>自身属性</p>
-<p>width height margin padding border等</p>
+<li><p>自身属性<br> width height margin padding border等</p>
 </li>
-<li><p>文字系列</p>
-<p>font line-height text-align text-indent vertical-align letter-spacing white-space text-overflow等</p>
+<li><p>文字系列<br> font line-height text-align text-indent vertical-align letter-spacing white-space text-overflow等</p>
 </li>
-<li><p>装饰属性</p>
-<p>color background opacity cursor等</p>
+<li><p>装饰属性<br> color background opacity cursor等</p>
 </li>
-<li><p>其他</p>
-<p>animation box-shadow border-radius transform transition等</p>
+<li>其他<br> animation box-shadow border-radius transform transition等</li>
+</ul>
+<h3 id="CSS书写规范"><a href="#CSS书写规范" class="headerlink" title="CSS书写规范"></a>CSS书写规范</h3><ul>
+<li><p>善用CSS缩写<br> CSS有些属性是可以缩写的，比如margin，padding，font等等，这样精简代码的同时又能提高用户的阅读体验。</p>
 </li>
-</ol>
-<h4 id="CSS书写规范"><a href="#CSS书写规范" class="headerlink" title="CSS书写规范"></a>CSS书写规范</h4><ol>
-<li><p>善用CSS缩写</p>
-<p>CSS有些属性是可以缩写的，比如margin，padding，font等等，这样精简代码的同时又能提高用户的阅读体验。</p>
+<li><p>去掉小数点前的0<br> font-size: 0.8em;可替换为font-size: .8em;</p>
 </li>
-<li><p>去掉小数点前的0</p>
-<p>font-size: 0.8em;可替换为font-size: .8em;</p>
+<li><p>16进制颜色代码缩写<br> 有些颜色代码是可以缩写的<br> color: #eebbcc;可替换为color: #ebc;</p>
 </li>
-<li><p>16进制颜色代码缩写</p>
-<p>有些颜色代码是可以缩写的</p>
-<p>color: #eebbcc;可替换为color: #ebc;</p>
+<li><p>CSS选择器命名规范<br> 长名称或词组使用中横线来为选择器命名。</p>
 </li>
-<li><p>CSS选择器命名规范</p>
-<p>长名称或词组使用中横线来为选择器命名。</p>
-</li>
-<li><p>不要随意使用id</p>
-<p>id在JS中是唯一的，不能多次使用，而使用class类选择器可以重复使用。另外id的优先级高于class，因此id应按需使用，不能滥用。</p>
+<li><p>不要随意使用id<br> id在JS中是唯一的，不能多次使用，而使用class类选择器可以重复使用。另外id的优先级高于class，因此id应按需使用，不能滥用。</p>
 </li>
 <li><p>针对特殊浏览器的属性，应写在标准属性之前</p>
-<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.not-a-square</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">-moz-border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">10px</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+ <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.not-a-square</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">-moz-border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">10px</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 </li>
 <li><p>选择符、属性、值使用小写</p>
 </li>
 <li><p>注释格式，统一使用双斜杠加*号</p>
 </li>
-<li><p>上下模块之间的间距统一使用下一个模块的margin-top来实现</p>
-<p>这样做的好处是：如果没有下一个模块也不会多出一段空白间距</p>
+<li><p>上下模块之间的间距统一使用下一个模块的margin-top来实现<br> 这样做的好处是：如果没有下一个模块也不会多出一段空白间距</p>
 </li>
-<li><p>:link :visited :hover :active书写属性L-V-H-A</p>
-<p>速记：LoVe（喜欢）HAte（讨厌）</p>
+<li><p>:link :visited :hover :active书写属性L-V-H-A<br>  速记：LoVe（喜欢）HAte（讨厌）</p>
 </li>
 <li><p>慎用!important</p>
 </li>
 <li><p>不要使用@import</p>
 </li>
-</ol>
-<h4 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h4><p><strong>内容优先，表现为辅</strong></p>
-<p>头部：header</p>
-<p>内容：content/container</p>
-<p>页面主体：main</p>
-<p>尾部：footer</p>
-<p>标志：logo</p>
-<p>广告：banner</p>
-<p>导航栏：nav</p>
-<p>面包屑：breadcrumb</p>
-<p>标签：tags</p>
-<p>文章列表：list</p>
-<p>侧边栏：sidebar</p>
-<p>菜单：menu</p>
-<p>子菜单：submenu</p>
-<p>友情链接：friendlink</p>
-<p>版权：copyright</p>
-<p>参考文章：</p>
-<p><a href="https://www.cnblogs.com/zhongshenggen/p/5893263.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhongshenggen/p/5893263.html</a></p>
+</ul>
+<h3 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h3><p><strong>内容优先，表现为辅</strong></p>
+<p>头部：header<br>内容：content/container<br>页面主体：main<br>尾部：footer<br>标志：logo<br>广告：banner<br>导航栏：nav<br>面包屑：breadcrumb<br>标签：tags<br>文章列表：list<br>侧边栏：sidebar<br>菜单：menu<br>子菜单：submenu<br>友情链接：friendlink<br>版权：copyright</p>
+<p>参考文章：<br><a href="https://www.cnblogs.com/zhongshenggen/p/5893263.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhongshenggen/p/5893263.html</a></p>
 
       
 
