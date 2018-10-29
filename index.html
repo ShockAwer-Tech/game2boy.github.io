@@ -152,27 +152,97 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-test" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+    <article id="post-CSS书写顺序、规范和命名规则" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2018/10/29/test/">CSS书写顺序、规范和命名规则</a>
+      <a class="article-title" href="/2018/10/29/CSS书写顺序、规范和命名规则/">CSS书写顺序、规范和命名规则</a>
     </h1>
   
 
         
-        <a href="/2018/10/29/test/" class="archive-article-date">
-  	<time datetime="2018-10-29T06:18:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-29</time>
+        <a href="/2018/10/29/CSS书写顺序、规范和命名规则/" class="archive-article-date">
+  	<time datetime="2018-10-29T06:24:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-10-29</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h4 id="CSS书写顺序"><a href="#CSS书写顺序" class="headerlink" title="CSS书写顺序"></a>CSS书写顺序</h4><ol>
+<li><p>位置属性</p>
+<p>position display float top left right bottom overflow clear z-index等</p>
+</li>
+<li><p>自身属性</p>
+<p>width height margin padding border等</p>
+</li>
+<li><p>文字系列</p>
+<p>font line-height text-align text-indent vertical-align letter-spacing white-space text-overflow等</p>
+</li>
+<li><p>装饰属性</p>
+<p>color background opacity cursor等</p>
+</li>
+<li><p>其他</p>
+<p>animation box-shadow border-radius transform transition等</p>
+</li>
+</ol>
+<h4 id="CSS书写规范"><a href="#CSS书写规范" class="headerlink" title="CSS书写规范"></a>CSS书写规范</h4><ol>
+<li><p>善用CSS缩写</p>
+<p>CSS有些属性是可以缩写的，比如margin，padding，font等等，这样精简代码的同时又能提高用户的阅读体验。</p>
+</li>
+<li><p>去掉小数点前的0</p>
+<p>font-size: 0.8em;可替换为font-size: .8em;</p>
+</li>
+<li><p>16进制颜色代码缩写</p>
+<p>有些颜色代码是可以缩写的</p>
+<p>color: #eebbcc;可替换为color: #ebc;</p>
+</li>
+<li><p>CSS选择器命名规范</p>
+<p>长名称或词组使用中横线来为选择器命名。</p>
+</li>
+<li><p>不要随意使用id</p>
+<p>id在JS中是唯一的，不能多次使用，而使用class类选择器可以重复使用。另外id的优先级高于class，因此id应按需使用，不能滥用。</p>
+</li>
+<li><p>针对特殊浏览器的属性，应写在标准属性之前</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-class">.not-a-square</span> &#123;</span><br><span class="line">    <span class="attribute">-webkit-border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">-moz-border-radius</span>: <span class="number">10px</span>;</span><br><span class="line">    <span class="attribute">border-radius</span>: <span class="number">10px</span>; </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>选择符、属性、值使用小写</p>
+</li>
+<li><p>注释格式，统一使用双斜杠加*号</p>
+</li>
+<li><p>上下模块之间的间距统一使用下一个模块的margin-top来实现</p>
+<p>这样做的好处是：如果没有下一个模块也不会多出一段空白间距</p>
+</li>
+<li><p>:link :visited :hover :active书写属性L-V-H-A</p>
+<p>速记：LoVe（喜欢）HAte（讨厌）</p>
+</li>
+<li><p>慎用!important</p>
+</li>
+<li><p>不要使用@import</p>
+</li>
+</ol>
+<h4 id="命名规则"><a href="#命名规则" class="headerlink" title="命名规则"></a>命名规则</h4><p><strong>内容优先，表现为辅</strong></p>
+<p>头部：header</p>
+<p>内容：content/container</p>
+<p>页面主体：main</p>
+<p>尾部：footer</p>
+<p>标志：logo</p>
+<p>广告：banner</p>
+<p>导航栏：nav</p>
+<p>面包屑：breadcrumb</p>
+<p>标签：tags</p>
+<p>文章列表：list</p>
+<p>侧边栏：sidebar</p>
+<p>菜单：menu</p>
+<p>子菜单：submenu</p>
+<p>友情链接：friendlink</p>
+<p>版权：copyright</p>
+<p>参考文章：</p>
+<p><a href="https://www.cnblogs.com/zhongshenggen/p/5893263.html" target="_blank" rel="noopener">https://www.cnblogs.com/zhongshenggen/p/5893263.html</a></p>
+
       
 
       
@@ -180,11 +250,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2018/10/29/test/">展开全文 >></a>
+          <a class="article-more-a" href="/2018/10/29/CSS书写顺序、规范和命名规则/">展开全文 >></a>
         </p>
       
 
@@ -305,6 +386,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color4">CSS</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
