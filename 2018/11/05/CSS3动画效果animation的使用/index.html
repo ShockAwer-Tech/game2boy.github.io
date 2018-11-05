@@ -6,20 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="">
-  <title>CSS3过渡效果transition的使用 | 杂铺</title>
+  <title>CSS3动画效果animation的使用 | 杂铺</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="transition属性CSS过渡由transition定义，也可以用下面子属性来控制过渡的各部分：  transition-property 指定哪个或哪些CSS属性用于过渡。只有指定的属性才会在过渡中发生动画。默认值为all，表示所有属性都将获得过渡效果。  transition-duration 指定过渡的时长（单位为s（秒）或ms（毫秒））。默认值为0s，表示立刻变化，将不会呈现过渡效果。">
+  <meta name="description" content="animation属性CSS动画由animation或其子属性定义，该属性允许配置动画时间、时长以及其他动画细节，但该属性不能配置动画的实际表现。动画的实际表现是由@keyframes规则实现。 animation的子属性有：  animation-name 指定由@keyframes描述的关键帧名称。  animation-duration 设置动画一个周期的时长（单位为s（秒）或ms（毫秒））">
 <meta name="keywords" content="CSS">
 <meta property="og:type" content="article">
-<meta property="og:title" content="CSS3过渡效果transition的使用">
-<meta property="og:url" content="/2018/11/02/CSS3过渡效果transition的使用/index.html">
+<meta property="og:title" content="CSS3动画效果animation的使用">
+<meta property="og:url" content="/2018/11/05/CSS3动画效果animation的使用/index.html">
 <meta property="og:site_name" content="杂铺">
-<meta property="og:description" content="transition属性CSS过渡由transition定义，也可以用下面子属性来控制过渡的各部分：  transition-property 指定哪个或哪些CSS属性用于过渡。只有指定的属性才会在过渡中发生动画。默认值为all，表示所有属性都将获得过渡效果。  transition-duration 指定过渡的时长（单位为s（秒）或ms（毫秒））。默认值为0s，表示立刻变化，将不会呈现过渡效果。">
+<meta property="og:description" content="animation属性CSS动画由animation或其子属性定义，该属性允许配置动画时间、时长以及其他动画细节，但该属性不能配置动画的实际表现。动画的实际表现是由@keyframes规则实现。 animation的子属性有：  animation-name 指定由@keyframes描述的关键帧名称。  animation-duration 设置动画一个周期的时长（单位为s（秒）或ms（毫秒））">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-11-05T09:21:54.810Z">
+<meta property="og:updated_time" content="2018-11-05T09:21:50.113Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="CSS3过渡效果transition的使用">
-<meta name="twitter:description" content="transition属性CSS过渡由transition定义，也可以用下面子属性来控制过渡的各部分：  transition-property 指定哪个或哪些CSS属性用于过渡。只有指定的属性才会在过渡中发生动画。默认值为all，表示所有属性都将获得过渡效果。  transition-duration 指定过渡的时长（单位为s（秒）或ms（毫秒））。默认值为0s，表示立刻变化，将不会呈现过渡效果。">
+<meta name="twitter:title" content="CSS3动画效果animation的使用">
+<meta name="twitter:description" content="animation属性CSS动画由animation或其子属性定义，该属性允许配置动画时间、时长以及其他动画细节，但该属性不能配置动画的实际表现。动画的实际表现是由@keyframes规则实现。 animation的子属性有：  animation-name 指定由@keyframes描述的关键帧名称。  animation-duration 设置动画一个周期的时长（单位为s（秒）或ms（毫秒））">
   
     <link rel="alternative" href="/atom.xml" title="杂铺" type="application/atom+xml">
   
@@ -135,77 +135,66 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            <article id="post-CSS3过渡效果transition的使用" class="article article-type-post " itemscope="" itemprop="blogPost">
+            <article id="post-CSS3动画效果animation的使用" class="article article-type-post " itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="article-title" itemprop="name">
-      CSS3过渡效果transition的使用
+      CSS3动画效果animation的使用
     </h1>
   
 
         
-        <a href="/2018/11/02/CSS3过渡效果transition的使用/" class="archive-article-date">
-  	<time datetime="2018-11-02T10:33:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-02</time>
+        <a href="/2018/11/05/CSS3动画效果animation的使用/" class="archive-article-date">
+  	<time datetime="2018-11-05T07:30:15.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-05</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="transition属性"><a href="#transition属性" class="headerlink" title="transition属性"></a>transition属性</h3><p>CSS过渡由<code>transition</code>定义，也可以用下面子属性来控制过渡的各部分：</p>
+        <h3 id="animation属性"><a href="#animation属性" class="headerlink" title="animation属性"></a>animation属性</h3><p>CSS动画由<code>animation</code>或其子属性定义，该属性允许配置动画时间、时长以及其他动画细节，但该属性不能配置动画的实际表现。动画的实际表现是由<code>@keyframes</code>规则实现。</p>
+<p><code>animation</code>的子属性有：</p>
 <ul>
-<li><p><code>transition-property</code></p>
-<p>指定哪个或哪些CSS属性用于过渡。只有指定的属性才会在过渡中发生动画。默认值为<code>all</code>，表示所有属性都将获得过渡效果。</p>
+<li><p><code>animation-name</code></p>
+<p>指定由<code>@keyframes</code>描述的关键帧名称。</p>
 </li>
-<li><p><code>transition-duration</code></p>
-<p>指定过渡的时长（单位为s（秒）或ms（毫秒））。默认值为0s，表示立刻变化，将不会呈现过渡效果。可以为所有属性指定一个值，也可以为每个属性指定不同的值。</p>
+<li><p><code>animation-duration</code></p>
+<p>设置动画一个周期的时长（单位为s（秒）或ms（毫秒））。默认值为0s，表示无动画。</p>
 </li>
-<li><p><code>transition-timing-function</code></p>
-<p>指定一个函数，定义属性值怎么变化。常用的缓动函数有：</p>
-<p><code>ease</code> 默认值，由快到慢。</p>
-<p><code>linear</code> 匀速过渡。</p>
-<p><code>ease-in</code> 越来越快。</p>
-<p><code>ease-out</code> 越来越慢。</p>
-<p><code>ease-in-out</code> 先加速再减速。</p>
-<p><a href="https://www.zhangxinxu.com/study/201011/css3-transition-animate-demo-3.html" target="_blank" rel="noopener">CSS3 transition下不同过渡类型效果展示实例页面</a></p>
+<li><p><code>animation-delay</code></p>
+<p>设置延时，即从元素加载完成之后到动画序列开始执行的这段时间。默认值为0s，表示不延迟，立即播放动画，单位为s（秒）或ms（毫秒）。</p>
 </li>
-<li><p><code>transition-delay</code></p>
-<p>指定延迟，即属性开始变化时与过渡开始发生时之间的时长。默认值为0s，表示不延迟，单位为s（秒）或ms（毫秒）。</p>
+<li><p><code>animation-direction</code></p>
+<p>设置动画在每次运行完成后是反向运行还是重新回到开始位置重复运行。可选值有：</p>
+<p><code>normal</code> 默认值，每个动画循环结束，动画重置到起点重新开始。</p>
+<p><code>alternate</code> 动画交替反向运行，反向运行时，动画按步退后。同时，带时间功能的函数也反向。比如，<code>ease-in</code>在反向时成为<code>ease-out</code>，而计数取决于开始是奇数迭代还是偶数迭代。</p>
+<p><code>reverse</code> 反向运行动画，每周期结束动画从尾到头运行。</p>
+<p><code>alternate-reverse</code> 反向交替，反向开始交替。动画第一次运行时是反向的，然后下一次是正向，后面依次循环。决定奇数次或偶数次的计数从1开始。</p>
+</li>
+<li><p><code>animation-iteration-count</code></p>
+<p>设置动画重复次数，可以指定<code>infinite</code>无限循环播放动画。默认值为1，即放完一遍后不循环播放。</p>
+</li>
+<li><p><code>animation-play-state</code></p>
+<p>允许暂停和恢复动画。可选值有<code>running</code>和<code>paused</code>。默认值为<code>running</code>，表示正在播放动画，<code>paused</code>表示暂停动画。通常在JS中使用该属性<code>object.style.animationPlayState = &#39;paused&#39;</code>来暂停动画。恢复一个已暂停的动画，将从它开始暂停的时候，而不是从动画序列的起点开始。</p>
+</li>
+<li><p><code>animation-timing-function</code></p>
+<p>设置动画速度，即通过建立加速度曲线，设置动画在关键帧之间是如何变化。默认值为<code>ease</code>，可选值有<code>linear</code>、<code>ease</code>、<code>ease-in</code>、<code>ease-out</code>、<code>ease-in-out</code>等。</p>
+</li>
+<li><p><code>animation-fill-mode</code></p>
+<p>指定动画执行前后如何为目标元素应用样式。可选值有：</p>
+<p><code>none</code> 默认值，动画执行前后不改变任何样式。</p>
+<p><code>forwards</code> 动画执行后，保持最后一帧的样式。</p>
+<p><code>backwards</code> 开始动画时，采用第一帧的样式。</p>
+<p><code>both</code> 动画将会执行<code>forwards</code>和<code>backwards</code>执行的动作。</p>
 </li>
 </ul>
-<h3 id="transition简写语法"><a href="#transition简写语法" class="headerlink" title="transition简写语法"></a>transition简写语法</h3><p><code>transition</code>简写时，属性值之间用空格分隔。例如：<code>transition: width 2s linear;</code>。但是需要注意，因为<code>transition-duration</code>和<code>transition-delay</code>都是时间，浏览器会根据先后顺序，将第一个时间作为<code>transition-duration</code>，第二个时间作为<code>transition-delay</code>。</p>
-<p><code>transition</code>可以指定多个值，当指定多个值时，中间用逗号分隔。例如：<code>transition: width 2s ease-in-out, height 2s ease-in-out;</code>。 </p>
-<h3 id="可用于过渡的CSS属性"><a href="#可用于过渡的CSS属性" class="headerlink" title="可用于过渡的CSS属性"></a>可用于过渡的CSS属性</h3><p>并不是所有CSS属性都可以发生动画，只有能数字量化的CSS属性才可以。常见的用于过渡的CSS属性有：</p>
-<ul>
-<li><p>颜色系</p>
-<p>color background-color border-color等</p>
-</li>
-<li><p>数值系</p>
-<p>width height top left right bottom zoom opacity background-position font-weight z-index等</p>
-</li>
-</ul>
-<p>点击查看：<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_animated_properties" target="_blank" rel="noopener">可动画属性列表</a></p>
-<h3 id="触发过渡的方式"><a href="#触发过渡的方式" class="headerlink" title="触发过渡的方式"></a>触发过渡的方式</h3><p>常见的触发方式：</p>
-<ul>
-<li><p>伪类触发</p>
-<p>:hover :focus :active :checked等</p>
-</li>
-<li><p>JS事件触发</p>
-</li>
-</ul>
-<h3 id="检测过渡是否完成"><a href="#检测过渡是否完成" class="headerlink" title="检测过渡是否完成"></a>检测过渡是否完成</h3><p>当过渡完成时触发一个事件，在符合标准的浏览器下，这个事件是<code>transitionend</code>，在WebKit下是<code>webkitTransitionEnd</code>。<code>transitionend</code>事件提供两个属性：</p>
-<ul>
-<li><p>propertyName</p>
-<p>字符串，表示已完成过渡的属性。</p>
-</li>
-<li><p>elapsedTime</p>
-<p>浮点数，表示当触发这个事件时过渡已进行的时间（秒）。这个值不受<code>transition-delay</code>影响。</p>
-</li>
-</ul>
-<p>参考文章：<br><a href="https://www.cnblogs.com/cc156676/p/5785112.html" target="_blank" rel="noopener">https://www.cnblogs.com/cc156676/p/5785112.html</a><br><a href="https://blog.csdn.net/github_38057462/article/details/77529783" target="_blank" rel="noopener">https://blog.csdn.net/github_38057462/article/details/77529783</a></p>
+<h3 id="使用keyframes定义动画序列"><a href="#使用keyframes定义动画序列" class="headerlink" title="使用keyframes定义动画序列"></a>使用keyframes定义动画序列</h3><p>通过使用<code>@keyframes</code>建立两个或两个以上关键帧来描述动画的表现。每一个关键帧都描述了动画在给定时间点上应该如何渲染。</p>
+<p>因为动画的时间设置是通过CSS样式定义的，关键帧使用百分比来指定动画发生的时间点。<code>0%</code>表示动画的第一时刻，<code>100%</code>表示动画的最终时刻。因为这两个时间点非常重要，因此还有特殊的别名：<code>from</code>和<code>to</code>。这两个都是可选的，若<code>from/0%</code>或<code>to/100%</code>未指定，则浏览器使用计算值开始或结束动画。可以包含额外可选的关键帧，来描述动画开始和结束之间的状态。</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">@<span class="keyword">keyframes</span> mymove &#123;</span><br><span class="line">    0%   &#123;<span class="attribute">top</span>:<span class="number">0px</span>; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">background</span>:red;&#125;</span><br><span class="line">    25%  &#123;<span class="attribute">top</span>:<span class="number">0px</span>; <span class="attribute">left</span>:<span class="number">100px</span>; <span class="attribute">background</span>:blue;&#125;</span><br><span class="line">    50%  &#123;<span class="attribute">top</span>:<span class="number">100px</span>; <span class="attribute">left</span>:<span class="number">100px</span>; <span class="attribute">background</span>:yellow;&#125;</span><br><span class="line">    75%  &#123;<span class="attribute">top</span>:<span class="number">100px</span>; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">background</span>:green;&#125;</span><br><span class="line">    100% &#123;<span class="attribute">top</span>:<span class="number">0px</span>; <span class="attribute">left</span>:<span class="number">0px</span>; <span class="attribute">background</span>:red;&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>参考文章：<br><a href="https://blog.csdn.net/h330531987/article/details/80431186" target="_blank" rel="noopener">https://blog.csdn.net/h330531987/article/details/80431186</a><br><a href="https://blog.csdn.net/u013243347/article/details/79976352" target="_blank" rel="noopener">https://blog.csdn.net/u013243347/article/details/79976352</a></p>
 
       
 
@@ -296,7 +285,7 @@
     <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
     <p>扫一扫，分享到微信</p>
     <div class="wx-qrcode">
-      <img src="//pan.baidu.com/share/qrcode?url=http:/2018/11/02/CSS3过渡效果transition的使用/" alt="微信分享二维码">
+      <img src="//pan.baidu.com/share/qrcode?url=http:/2018/11/05/CSS3动画效果animation的使用/" alt="微信分享二维码">
     </div>
 </div>
 
@@ -310,18 +299,9 @@
   
 <nav id="article-nav">
   
-    <a href="/2018/11/05/CSS3动画效果animation的使用/" id="article-nav-newer" class="article-nav-link-wrap">
-      <i class="icon-circle-left"></i>
-      <div class="article-nav-title">
-        
-          CSS3动画效果animation的使用
-        
-      </div>
-    </a>
   
-  
-    <a href="/2018/11/01/对CSS-BFC的理解/" id="article-nav-older" class="article-nav-link-wrap">
-      <div class="article-nav-title">对CSS BFC的理解</div>
+    <a href="/2018/11/02/CSS3过渡效果transition的使用/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">CSS3过渡效果transition的使用</div>
       <i class="icon-circle-right"></i>
     </a>
   
