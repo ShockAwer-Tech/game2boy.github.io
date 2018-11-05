@@ -181,7 +181,7 @@
 <li>display的值为inline-block、table-cell、table-caption、flex、inline-flex中的任何一个</li>
 <li>overflow的值不为visible</li>
 </ul>
-<h3 id="BFC的应用"><a href="#BFC的应用" class="headerlink" title="BFC的应用"></a>BFC的应用</h3><h4 id="阻止元素被浮动元素覆盖（自适应两栏布局）"><a href="#阻止元素被浮动元素覆盖（自适应两栏布局）" class="headerlink" title="阻止元素被浮动元素覆盖（自适应两栏布局）"></a>阻止元素被浮动元素覆盖（自适应两栏布局）</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="undefined">   .aside &#123;</span></span><br><span class="line"><span class="undefined">       float: left;</span></span><br><span class="line"><span class="undefined">       width: 100px;</span></span><br><span class="line"><span class="undefined">       height: 150px;</span></span><br><span class="line"><span class="undefined">       background: #f66;</span></span><br><span class="line"><span class="undefined">   &#125;</span></span><br><span class="line"><span class="undefined">   .main &#123;</span></span><br><span class="line"><span class="undefined">       height: 200px;</span></span><br><span class="line"><span class="undefined">       background-color: #fcc;</span></span><br><span class="line"><span class="undefined">   &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"aside"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
+<h3 id="BFC的应用"><a href="#BFC的应用" class="headerlink" title="BFC的应用"></a>BFC的应用</h3><h4 id="阻止元素被浮动元素覆盖（自适应两栏布局）"><a href="#阻止元素被浮动元素覆盖（自适应两栏布局）" class="headerlink" title="阻止元素被浮动元素覆盖（自适应两栏布局）"></a>阻止元素被浮动元素覆盖（自适应两栏布局）</h4><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">style</span>&gt;</span><span class="undefined"></span></span><br><span class="line"><span class="css">   <span class="selector-class">.aside</span> &#123;</span></span><br><span class="line"><span class="undefined">       float: left;</span></span><br><span class="line"><span class="undefined">       width: 100px;</span></span><br><span class="line"><span class="undefined">       height: 150px;</span></span><br><span class="line"><span class="css">       <span class="selector-tag">background</span>: <span class="selector-id">#f66</span>;</span></span><br><span class="line"><span class="undefined">   &#125;</span></span><br><span class="line"><span class="css">   <span class="selector-class">.main</span> &#123;</span></span><br><span class="line"><span class="undefined">       height: 200px;</span></span><br><span class="line"><span class="css">       <span class="selector-tag">background-color</span>: <span class="selector-id">#fcc</span>;</span></span><br><span class="line"><span class="undefined">   &#125;</span></span><br><span class="line"><span class="undefined"></span><span class="tag">&lt;/<span class="name">style</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"aside"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">class</span>=<span class="string">"main"</span>&gt;</span><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure>
 <p>效果图如下：</p>
 <p><img src="/2018/11/01/对CSS-BFC的理解/image-20181101141312715.png" alt="image-20181101141312715"></p>
 <p>此时满足了BFC特性的第三条：</p>
@@ -321,6 +321,15 @@
 
   
 <nav id="article-nav">
+  
+    <a href="/2018/11/02/CSS3过渡效果transition的使用/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          CSS3过渡效果transition的使用
+        
+      </div>
+    </a>
   
   
     <a href="/2018/10/30/CSS盒模型/" id="article-nav-older" class="article-nav-link-wrap">
@@ -499,6 +508,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           
             <li class="search-li">
               <a href="https://developer.mozilla.org/zh-CN/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>MDN</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.cnblogs.com/cnblogs-jcy/p/5689033.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>CSS颜色代码大全</a>
             </li>
           
         </ul>

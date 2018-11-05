@@ -132,6 +132,132 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-CSS3过渡效果transition的使用" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/11/02/CSS3过渡效果transition的使用/">CSS3过渡效果transition的使用</a>
+    </h1>
+  
+
+        
+        <a href="/2018/11/02/CSS3过渡效果transition的使用/" class="archive-article-date">
+  	<time datetime="2018-11-02T10:33:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-02</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="transition属性"><a href="#transition属性" class="headerlink" title="transition属性"></a>transition属性</h3><p>CSS过渡由<code>transition</code>定义，也可以用下面子属性来控制过渡的各部分：</p>
+<ul>
+<li><p><code>transition-property</code></p>
+<p>指定哪个或哪些CSS属性用于过渡。只有指定的属性才会在过渡中发生动画。默认值为<code>all</code>，表示所有属性都将获得过渡效果。</p>
+</li>
+<li><p><code>transition-duration</code></p>
+<p>指定过渡的时长（单位为s（秒）或ms（毫秒））。默认值为0，表示立刻变化，将不会呈现过渡效果。可以为所有属性指定一个值，也可以为每个属性指定不同的值。</p>
+</li>
+<li><p><code>transition-timing-function</code></p>
+<p>指定一个函数，定义属性值怎么变化。常用的缓动函数有：</p>
+<p><code>ease</code> 默认值，由快到慢。</p>
+<p><code>linear</code> 匀速过渡。</p>
+<p><code>ease-in</code> 越来越快。</p>
+<p><code>ease-out</code> 越来越慢。</p>
+<p><code>ease-in-out</code> 先加速再减速。</p>
+<p><a href="https://www.zhangxinxu.com/study/201011/css3-transition-animate-demo-3.html" target="_blank" rel="noopener">CSS3 transition下不同过渡类型效果展示实例页面</a></p>
+</li>
+<li><p><code>transition-delay</code></p>
+<p>指定延迟，即属性开始变化时与过渡开始发生时之间的时长。默认值为0。</p>
+</li>
+</ul>
+<h3 id="transition简写语法"><a href="#transition简写语法" class="headerlink" title="transition简写语法"></a>transition简写语法</h3><p><code>transition</code>简写时，属性值之间用空格分隔。例如：<code>transition: width 2s linear;</code>。但是需要注意，因为<code>transition-duration</code>和<code>transition-delay</code>都是时间，浏览器会根据先后顺序，将第一个时间作为<code>transition-duration</code>，第二个时间作为<code>transition-delay</code>。</p>
+<p><code>transition</code>可以指定多个值，当指定多个值时，中间用逗号分隔。例如：<code>transition: width 2s ease-in-out, height 2s ease-in-out;</code>。 </p>
+<h3 id="可用于过渡的CSS属性"><a href="#可用于过渡的CSS属性" class="headerlink" title="可用于过渡的CSS属性"></a>可用于过渡的CSS属性</h3><p>并不是所有CSS属性都可以发生动画，只有能数字量化的CSS属性才可以。常见的用于过渡的CSS属性有：</p>
+<ul>
+<li><p>颜色系</p>
+<p>color background-color border-color等</p>
+</li>
+<li><p>数值系</p>
+<p>width height top left right bottom zoom opacity background-position font-weight z-index等</p>
+</li>
+</ul>
+<p>点击查看：<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_animated_properties" target="_blank" rel="noopener">可动画属性列表</a></p>
+<h3 id="触发过渡的方式"><a href="#触发过渡的方式" class="headerlink" title="触发过渡的方式"></a>触发过渡的方式</h3><p>常见的触发方式：</p>
+<ul>
+<li><p>伪类触发</p>
+<p>:hover :focus :active :checked等</p>
+</li>
+<li><p>JS事件触发</p>
+</li>
+</ul>
+<h3 id="检测过渡是否完成"><a href="#检测过渡是否完成" class="headerlink" title="检测过渡是否完成"></a>检测过渡是否完成</h3><p>当过渡完成时触发一个事件，在符合标准的浏览器下，这个事件是<code>transitionend</code>，在WebKit下是<code>webkitTransitionEnd</code>。<code>transitionend</code>事件提供两个属性：</p>
+<ul>
+<li><p>propertyName</p>
+<p>字符串，表示已完成过渡的属性。</p>
+</li>
+<li><p>elapsedTime</p>
+<p>浮点数，表示当触发这个事件时过渡已进行的时间（秒）。这个值不受<code>transition-delay</code>影响。</p>
+</li>
+</ul>
+<p>参考文章：</p>
+<p><a href="https://www.cnblogs.com/cc156676/p/5785112.html" target="_blank" rel="noopener">https://www.cnblogs.com/cc156676/p/5785112.html</a></p>
+<p><a href="https://blog.csdn.net/github_38057462/article/details/77529783" target="_blank" rel="noopener">https://blog.csdn.net/github_38057462/article/details/77529783</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2018/11/02/CSS3过渡效果transition的使用/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-对CSS-BFC的理解" class="article article-type-post  article-index" itemscope="" itemprop="blogPost">
   <div class="article-inner">
     
@@ -593,6 +719,10 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
           
             <li class="search-li">
               <a href="https://developer.mozilla.org/zh-CN/" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>MDN</a>
+            </li>
+          
+            <li class="search-li">
+              <a href="http://www.cnblogs.com/cnblogs-jcy/p/5689033.html" target="_blank" class="search-title"><i class="icon-quo-left icon"></i>CSS颜色代码大全</a>
             </li>
           
         </ul>

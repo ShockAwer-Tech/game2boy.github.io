@@ -6,15 +6,20 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="">
-  <title>Archives: 2018/11 | 杂铺</title>
+  <title>CSS3过渡效果transition的使用 | 杂铺</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="杂铺">
-<meta property="og:url" content="/archives/2018/11/index.html">
+  <meta name="description" content="transition属性CSS过渡由transition定义，也可以用下面子属性来控制过渡的各部分：  transition-property 指定哪个或哪些CSS属性用于过渡。只有指定的属性才会在过渡中发生动画。默认值为all，表示所有属性都将获得过渡效果。  transition-duration 指定过渡的时长（单位为s（秒）或ms（毫秒））。默认值为0，表示立刻变化，将不会呈现过渡效果。可">
+<meta name="keywords" content="CSS">
+<meta property="og:type" content="article">
+<meta property="og:title" content="CSS3过渡效果transition的使用">
+<meta property="og:url" content="/2018/11/02/CSS3过渡效果transition的使用/index.html">
 <meta property="og:site_name" content="杂铺">
+<meta property="og:description" content="transition属性CSS过渡由transition定义，也可以用下面子属性来控制过渡的各部分：  transition-property 指定哪个或哪些CSS属性用于过渡。只有指定的属性才会在过渡中发生动画。默认值为all，表示所有属性都将获得过渡效果。  transition-duration 指定过渡的时长（单位为s（秒）或ms（毫秒））。默认值为0，表示立刻变化，将不会呈现过渡效果。可">
 <meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-11-05T06:17:45.816Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="杂铺">
+<meta name="twitter:title" content="CSS3过渡效果transition的使用">
+<meta name="twitter:description" content="transition属性CSS过渡由transition定义，也可以用下面子属性来控制过渡的各部分：  transition-property 指定哪个或哪些CSS属性用于过渡。只有指定的属性才会在过渡中发生动画。默认值为all，表示所有属性都将获得过渡效果。  transition-duration 指定过渡的时长（单位为s（秒）或ms（毫秒））。默认值为0，表示立刻变化，将不会呈现过渡效果。可">
   
     <link rel="alternative" href="/atom.xml" title="杂铺" type="application/atom+xml">
   
@@ -130,36 +135,108 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-CSS3过渡效果transition的使用" class="article article-type-post " itemscope="" itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      CSS3过渡效果transition的使用
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2018" class="archive-year">2018</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/02/CSS3过渡效果transition的使用/" class="archive-article-date">
+
+        
+        <a href="/2018/11/02/CSS3过渡效果transition的使用/" class="archive-article-date">
   	<time datetime="2018-11-02T10:33:28.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-02</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/02/CSS3过渡效果transition的使用/">CSS3过渡效果transition的使用</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h3 id="transition属性"><a href="#transition属性" class="headerlink" title="transition属性"></a>transition属性</h3><p>CSS过渡由<code>transition</code>定义，也可以用下面子属性来控制过渡的各部分：</p>
+<ul>
+<li><p><code>transition-property</code></p>
+<p>指定哪个或哪些CSS属性用于过渡。只有指定的属性才会在过渡中发生动画。默认值为<code>all</code>，表示所有属性都将获得过渡效果。</p>
+</li>
+<li><p><code>transition-duration</code></p>
+<p>指定过渡的时长（单位为s（秒）或ms（毫秒））。默认值为0，表示立刻变化，将不会呈现过渡效果。可以为所有属性指定一个值，也可以为每个属性指定不同的值。</p>
+</li>
+<li><p><code>transition-timing-function</code></p>
+<p>指定一个函数，定义属性值怎么变化。常用的缓动函数有：</p>
+<p><code>ease</code> 默认值，由快到慢。</p>
+<p><code>linear</code> 匀速过渡。</p>
+<p><code>ease-in</code> 越来越快。</p>
+<p><code>ease-out</code> 越来越慢。</p>
+<p><code>ease-in-out</code> 先加速再减速。</p>
+<p><a href="https://www.zhangxinxu.com/study/201011/css3-transition-animate-demo-3.html" target="_blank" rel="noopener">CSS3 transition下不同过渡类型效果展示实例页面</a></p>
+</li>
+<li><p><code>transition-delay</code></p>
+<p>指定延迟，即属性开始变化时与过渡开始发生时之间的时长。默认值为0。</p>
+</li>
+</ul>
+<h3 id="transition简写语法"><a href="#transition简写语法" class="headerlink" title="transition简写语法"></a>transition简写语法</h3><p><code>transition</code>简写时，属性值之间用空格分隔。例如：<code>transition: width 2s linear;</code>。但是需要注意，因为<code>transition-duration</code>和<code>transition-delay</code>都是时间，浏览器会根据先后顺序，将第一个时间作为<code>transition-duration</code>，第二个时间作为<code>transition-delay</code>。</p>
+<p><code>transition</code>可以指定多个值，当指定多个值时，中间用逗号分隔。例如：<code>transition: width 2s ease-in-out, height 2s ease-in-out;</code>。 </p>
+<h3 id="可用于过渡的CSS属性"><a href="#可用于过渡的CSS属性" class="headerlink" title="可用于过渡的CSS属性"></a>可用于过渡的CSS属性</h3><p>并不是所有CSS属性都可以发生动画，只有能数字量化的CSS属性才可以。常见的用于过渡的CSS属性有：</p>
+<ul>
+<li><p>颜色系</p>
+<p>color background-color border-color等</p>
+</li>
+<li><p>数值系</p>
+<p>width height top left right bottom zoom opacity background-position font-weight z-index等</p>
+</li>
+</ul>
+<p>点击查看：<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_animated_properties" target="_blank" rel="noopener">可动画属性列表</a></p>
+<h3 id="触发过渡的方式"><a href="#触发过渡的方式" class="headerlink" title="触发过渡的方式"></a>触发过渡的方式</h3><p>常见的触发方式：</p>
+<ul>
+<li><p>伪类触发</p>
+<p>:hover :focus :active :checked等</p>
+</li>
+<li><p>JS事件触发</p>
+</li>
+</ul>
+<h3 id="检测过渡是否完成"><a href="#检测过渡是否完成" class="headerlink" title="检测过渡是否完成"></a>检测过渡是否完成</h3><p>当过渡完成时触发一个事件，在符合标准的浏览器下，这个事件是<code>transitionend</code>，在WebKit下是<code>webkitTransitionEnd</code>。<code>transitionend</code>事件提供两个属性：</p>
+<ul>
+<li><p>propertyName</p>
+<p>字符串，表示已完成过渡的属性。</p>
+</li>
+<li><p>elapsedTime</p>
+<p>浮点数，表示当触发这个事件时过渡已进行的时间（秒）。这个值不受<code>transition-delay</code>影响。</p>
+</li>
+</ul>
+<p>参考文章：</p>
+<p><a href="https://www.cnblogs.com/cc156676/p/5785112.html" target="_blank" rel="noopener">https://www.cnblogs.com/cc156676/p/5785112.html</a></p>
+<p><a href="https://blog.csdn.net/github_38057462/article/details/77529783" target="_blank" rel="noopener">https://blog.csdn.net/github_38057462/article/details/77529783</a></p>
 
-        <div class="article-info info-on-right">
-          
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -171,57 +248,106 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http:/2018/11/02/CSS3过渡效果transition的使用/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2018/11/01/对CSS-BFC的理解/" class="archive-article-date">
-  	<time datetime="2018-11-01T04:24:11.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2018-11-01</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2018/11/01/对CSS-BFC的理解/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">对CSS BFC的理解</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2018/11/01/对CSS-BFC的理解/">对CSS BFC的理解</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color4">CSS</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
+
+  
 
 
           </div>
@@ -244,8 +370,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
